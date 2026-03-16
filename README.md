@@ -6,6 +6,12 @@ A modern, responsive web application for digital banking and cryptocurrency mana
 
 MyBank is an educational project that recreates the UI/UX of modern fintech and crypto applications. It features a complete banking ecosystem with multiple pages, real-time interactions, and a polished design.
 
+## 🚀 Live Demo
+
+**[MyBank App - Live Demo](https://simple-banking-webapp.vercel.app/)**
+
+Try the app now! Navigate through all pages using the bottom navigation bar.
+
 ## ✨ Features
 
 ### 📱 Pages
