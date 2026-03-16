@@ -5,10 +5,10 @@ import TransactionList from '../components/TransactionList'
 import BottomNav from '../components/BottomNav'
 
 export default function HomePage() {
-  const mockTransactions = [
+  const mockTransactions: typeof import('../components/TransactionList').default extends (p: {transactions: infer T}) => any ? T : never[] = [
     {
       id: '1',
-      type: 'sent',
+      type: 'sent' as const,
       title: 'Sent to Alex',
       description: 'Bitcoin Transfer',
       amount: '-0.5 BTC',
@@ -18,7 +18,7 @@ export default function HomePage() {
     },
     {
       id: '2',
-      type: 'received',
+      type: 'received' as const,
       title: 'Received from Sarah',
       description: 'Ethereum Transfer',
       amount: '+2.5 ETH',
@@ -28,19 +28,21 @@ export default function HomePage() {
     },
     {
       id: '3',
-      type: 'purchase',
+      type: 'purchase' as const,
       title: 'Coffee Shop',
       description: 'Card Purchase',
       amount: '-$12.50',
+      amountUSD: '-$12.50',
       icon: '☕',
       timestamp: 'Yesterday',
     },
     {
       id: '4',
-      type: 'received',
+      type: 'received' as const,
       title: 'Salary Deposit',
       description: 'Monthly Income',
       amount: '+$3,500',
+      amountUSD: '+$3,500',
       icon: '💼',
       timestamp: '3 days ago',
     },

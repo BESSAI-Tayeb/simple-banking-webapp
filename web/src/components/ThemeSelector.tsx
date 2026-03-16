@@ -1,7 +1,7 @@
 interface ThemeSelectorProps {
   themes: string[]
   selected: string
-  onChange: (theme: string) => void
+  onChange: (theme: any) => void
 }
 
 const themeColors: Record<string, string> = {
